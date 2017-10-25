@@ -12,9 +12,11 @@
 		3BF87D9E1FA0641600948D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87D9C1FA0641600948D92 /* Main.storyboard */; };
 		3BF87DA01FA0641600948D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87D9F1FA0641600948D92 /* Assets.xcassets */; };
 		3BF87DA31FA0641600948D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87DA11FA0641600948D92 /* LaunchScreen.storyboard */; };
+		5EA81BEAD7B9B5C99D5AC7D3 /* Pods_ArlaNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92A204B082FEFA40BB2BBB /* Pods_ArlaNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B92A204B082FEFA40BB2BBB /* Pods_ArlaNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArlaNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF87D951FA0641600948D92 /* ArlaNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArlaNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF87D981FA0641600948D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF87D9A1FA0641600948D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		3BF87D9F1FA0641600948D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF87DA21FA0641600948D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF87DA41FA0641600948D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE438108C2306B2C46C8FCD /* Pods-ArlaNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArlaNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews.release.xcconfig"; sourceTree = "<group>"; };
+		41870456C794C2A0AD89F25F /* Pods-ArlaNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArlaNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA81BEAD7B9B5C99D5AC7D3 /* Pods_ArlaNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3BF87D971FA0641600948D92 /* ArlaNews */,
 				3BF87D961FA0641600948D92 /* Products */,
+				E75757546FA0B54CB9BA818E /* Pods */,
+				EFE62B97E92510D43B1B113A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ArlaNews;
 			sourceTree = "<group>";
 		};
+		E75757546FA0B54CB9BA818E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41870456C794C2A0AD89F25F /* Pods-ArlaNews.debug.xcconfig */,
+				3EE438108C2306B2C46C8FCD /* Pods-ArlaNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFE62B97E92510D43B1B113A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B92A204B082FEFA40BB2BBB /* Pods_ArlaNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF87DA71FA0641600948D92 /* Build configuration list for PBXNativeTarget "ArlaNews" */;
 			buildPhases = (
+				69C800E62259104499BE279D /* [CP] Check Pods Manifest.lock */,
 				3BF87D911FA0641600948D92 /* Sources */,
 				3BF87D921FA0641600948D92 /* Frameworks */,
 				3BF87D931FA0641600948D92 /* Resources */,
+				4BC0A978D36D7AE4CF4CEFB8 /* [CP] Embed Pods Frameworks */,
+				B6DFFCDABBBEB971AC0E9E2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BC0A978D36D7AE4CF4CEFB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C800E62259104499BE279D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DFFCDABBBEB971AC0E9E2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BF87D911FA0641600948D92 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		3BF87DA81FA0641600948D92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41870456C794C2A0AD89F25F /* Pods-ArlaNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		3BF87DA91FA0641600948D92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE438108C2306B2C46C8FCD /* Pods-ArlaNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
