@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CLG-S5-rYD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CLG-S5-rYD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="gln-uH-emw">
             <objects>
                 <viewController id="qdm-wg-maU" customClass="HomeViewController" customModule="AlarNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q2S-oO-Pxd"/>
+                        <viewControllerLayoutGuide type="bottom" id="GyN-Zr-Mtj"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XH2-uL-7Q2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +31,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeItemCell1" rowHeight="120" id="3OH-Aq-G2m" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeItemCell1" rowHeight="120" id="3OH-Aq-G2m" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="228" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3OH-Aq-G2m" id="V56-gp-Hx6">
@@ -45,11 +49,19 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="塔里木新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWK-iq-NYb">
+                                                            <rect key="frame" x="26.5" y="97" width="71.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="oWK-iq-NYb" firstAttribute="centerX" secondItem="G8v-Eh-8W7" secondAttribute="centerX" id="PI5-Ti-FmT"/>
                                                         <constraint firstItem="G8v-Eh-8W7" firstAttribute="centerY" secondItem="drU-J6-MX3" secondAttribute="centerY" id="Xc3-Z8-J0W"/>
                                                         <constraint firstItem="G8v-Eh-8W7" firstAttribute="centerX" secondItem="drU-J6-MX3" secondAttribute="centerX" id="Zxl-rF-epJ"/>
+                                                        <constraint firstItem="oWK-iq-NYb" firstAttribute="top" secondItem="G8v-Eh-8W7" secondAttribute="bottom" constant="5" id="jYa-0v-xdV"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9s-HE-YW5">
@@ -63,10 +75,18 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一周热潮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P7-Uq-vjo">
+                                                            <rect key="frame" x="33.5" y="96" width="57.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="2P7-Uq-vjo" firstAttribute="centerX" secondItem="hJf-wI-oQQ" secondAttribute="centerX" id="3lG-vq-4G0"/>
                                                         <constraint firstItem="hJf-wI-oQQ" firstAttribute="centerX" secondItem="Y9s-HE-YW5" secondAttribute="centerX" id="b14-kp-PWB"/>
+                                                        <constraint firstItem="2P7-Uq-vjo" firstAttribute="top" secondItem="hJf-wI-oQQ" secondAttribute="bottom" constant="5" id="rhf-lS-0QN"/>
                                                         <constraint firstItem="hJf-wI-oQQ" firstAttribute="centerY" secondItem="Y9s-HE-YW5" secondAttribute="centerY" id="rkc-xg-fOu"/>
                                                     </constraints>
                                                 </view>
@@ -81,11 +101,19 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="民生周末" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rid-PR-LGa">
+                                                            <rect key="frame" x="33.5" y="96.5" width="57.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="rid-PR-LGa" firstAttribute="top" secondItem="smu-dx-Gag" secondAttribute="bottom" constant="5" id="1Ol-xK-Eir"/>
                                                         <constraint firstItem="smu-dx-Gag" firstAttribute="centerX" secondItem="LBg-tu-78k" secondAttribute="centerX" id="Cvi-kM-L4f"/>
                                                         <constraint firstItem="smu-dx-Gag" firstAttribute="centerY" secondItem="LBg-tu-78k" secondAttribute="centerY" id="RwU-IH-QRf"/>
+                                                        <constraint firstItem="rid-PR-LGa" firstAttribute="centerX" secondItem="smu-dx-Gag" secondAttribute="centerX" id="uQh-Mv-Xsy"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -109,7 +137,7 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="1500" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeItemCell2" rowHeight="120" id="Axf-H6-xXm" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeItemCell2" rowHeight="120" id="Axf-H6-xXm" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="348" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Axf-H6-xXm" id="eHT-5b-Uvo">
@@ -127,10 +155,10 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视屏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qk-Zr-2VO">
-                                                            <rect key="frame" x="46.5" y="97" width="31" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记者走基层" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qk-Zr-2VO">
+                                                            <rect key="frame" x="26.5" y="97" width="71.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -154,11 +182,19 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜边阿拉尔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-Ng-77C">
+                                                            <rect key="frame" x="26.5" y="96" width="71.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="rS3-Ng-77C" firstAttribute="centerX" secondItem="P2K-6S-aVv" secondAttribute="centerX" id="Atn-zg-zdb"/>
                                                         <constraint firstItem="P2K-6S-aVv" firstAttribute="centerY" secondItem="FEy-81-0pz" secondAttribute="centerY" id="Fbl-5f-h6k"/>
                                                         <constraint firstItem="P2K-6S-aVv" firstAttribute="centerX" secondItem="FEy-81-0pz" secondAttribute="centerX" id="JHq-1A-32M"/>
+                                                        <constraint firstItem="rS3-Ng-77C" firstAttribute="top" secondItem="P2K-6S-aVv" secondAttribute="bottom" constant="5" id="kWh-Jd-yZh"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp1-2a-Y5i">
@@ -172,11 +208,19 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专题报道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gO-7o-5DQ">
+                                                            <rect key="frame" x="33.5" y="96.5" width="57.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="gwK-3r-EWk" firstAttribute="centerX" secondItem="tp1-2a-Y5i" secondAttribute="centerX" id="Kns-4F-6w8"/>
                                                         <constraint firstItem="gwK-3r-EWk" firstAttribute="centerY" secondItem="tp1-2a-Y5i" secondAttribute="centerY" id="oec-TL-KR0"/>
+                                                        <constraint firstItem="1gO-7o-5DQ" firstAttribute="top" secondItem="gwK-3r-EWk" secondAttribute="bottom" constant="5" id="xIk-in-PLv"/>
+                                                        <constraint firstItem="1gO-7o-5DQ" firstAttribute="centerX" secondItem="gwK-3r-EWk" secondAttribute="centerX" id="yfm-ty-RMj"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -200,7 +244,7 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="1200" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeItemCell3" rowHeight="120" id="f7N-rb-Z4t" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeItemCell3" rowHeight="120" id="f7N-rb-Z4t" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="468" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f7N-rb-Z4t" id="w5y-8R-wTZ">
@@ -218,9 +262,9 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-Gc-rme">
-                                                            <rect key="frame" x="46.5" y="97" width="31" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿拉尔故事会" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-Gc-rme">
+                                                            <rect key="frame" x="19" y="97" width="86" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -245,10 +289,18 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摄友天地" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X2-1V-Y6a">
+                                                            <rect key="frame" x="33.5" y="96" width="57.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="Sf8-Wa-1F6" firstAttribute="centerY" secondItem="gZP-75-Gf1" secondAttribute="centerY" id="5jp-oM-dga"/>
+                                                        <constraint firstItem="4X2-1V-Y6a" firstAttribute="centerX" secondItem="Sf8-Wa-1F6" secondAttribute="centerX" id="aiN-Hy-hc0"/>
+                                                        <constraint firstItem="4X2-1V-Y6a" firstAttribute="top" secondItem="Sf8-Wa-1F6" secondAttribute="bottom" constant="5" id="l01-hG-bHh"/>
                                                         <constraint firstItem="Sf8-Wa-1F6" firstAttribute="centerX" secondItem="gZP-75-Gf1" secondAttribute="centerX" id="mvk-NA-qJm"/>
                                                     </constraints>
                                                 </view>
@@ -263,11 +315,19 @@
                                                             </constraints>
                                                             <state key="normal" image="photoalbum"/>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文娱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjl-hT-Z2c">
+                                                            <rect key="frame" x="47.5" y="96.5" width="29" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="qjl-hT-Z2c" firstAttribute="centerX" secondItem="3pN-k7-U0Y" secondAttribute="centerX" id="5Yu-Or-wsX"/>
                                                         <constraint firstItem="3pN-k7-U0Y" firstAttribute="centerX" secondItem="DYQ-eb-0hp" secondAttribute="centerX" id="Cj0-3n-amL"/>
                                                         <constraint firstItem="3pN-k7-U0Y" firstAttribute="centerY" secondItem="DYQ-eb-0hp" secondAttribute="centerY" id="WWc-bF-eHm"/>
+                                                        <constraint firstItem="qjl-hT-Z2c" firstAttribute="top" secondItem="3pN-k7-U0Y" secondAttribute="bottom" constant="5" id="zSn-nv-xBX"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -291,6 +351,113 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="1500" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeItemCell4" rowHeight="120" id="ZfW-4a-849" customClass="HomeItemCell" customModule="AlarNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="588" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZfW-4a-849" id="0lc-jx-8vW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62g-Jr-PKY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="120"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkM-XN-bim">
+                                                            <rect key="frame" x="30" y="28" width="64" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="X0w-CH-Mqr"/>
+                                                                <constraint firstAttribute="width" constant="64" id="wFl-lv-03V"/>
+                                                            </constraints>
+                                                            <state key="normal" image="photoalbum"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV7-hb-SFQ">
+                                                            <rect key="frame" x="48" y="97" width="29" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="MkM-XN-bim" firstAttribute="centerY" secondItem="62g-Jr-PKY" secondAttribute="centerY" id="6JW-u4-FaW"/>
+                                                        <constraint firstItem="MkM-XN-bim" firstAttribute="centerX" secondItem="62g-Jr-PKY" secondAttribute="centerX" id="8HQ-pt-MbR"/>
+                                                        <constraint firstItem="MkM-XN-bim" firstAttribute="centerX" secondItem="62g-Jr-PKY" secondAttribute="centerX" id="9dj-g7-dUs"/>
+                                                        <constraint firstItem="wV7-hb-SFQ" firstAttribute="top" secondItem="MkM-XN-bim" secondAttribute="bottom" constant="5" id="IlU-mu-XCP"/>
+                                                        <constraint firstItem="wV7-hb-SFQ" firstAttribute="centerX" secondItem="62g-Jr-PKY" secondAttribute="centerX" id="M3q-hd-yS1"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfz-i8-5kc">
+                                                    <rect key="frame" x="125" y="0.0" width="125" height="119.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAt-Px-lzM">
+                                                            <rect key="frame" x="30" y="27" width="64" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="6w9-Ln-2rc"/>
+                                                                <constraint firstAttribute="width" constant="64" id="mGs-Pe-ui6"/>
+                                                            </constraints>
+                                                            <state key="normal" image="photoalbum"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="便民服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFS-Aj-KsE">
+                                                            <rect key="frame" x="33.5" y="96" width="57.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="VAt-Px-lzM" firstAttribute="centerY" secondItem="bfz-i8-5kc" secondAttribute="centerY" id="07B-eL-9He"/>
+                                                        <constraint firstItem="NFS-Aj-KsE" firstAttribute="top" secondItem="VAt-Px-lzM" secondAttribute="bottom" constant="5" id="6w8-GZ-M2k"/>
+                                                        <constraint firstItem="VAt-Px-lzM" firstAttribute="centerX" secondItem="bfz-i8-5kc" secondAttribute="centerX" id="FFq-I5-Zoi"/>
+                                                        <constraint firstItem="NFS-Aj-KsE" firstAttribute="centerX" secondItem="VAt-Px-lzM" secondAttribute="centerX" id="Qdw-1A-EgT"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27Q-OC-HhK">
+                                                    <rect key="frame" x="250" y="-0.5" width="125" height="120.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7so-Hw-o3b">
+                                                            <rect key="frame" x="30" y="27.5" width="64" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="LiL-nI-daL"/>
+                                                                <constraint firstAttribute="width" constant="64" id="wij-rK-gbB"/>
+                                                            </constraints>
+                                                            <state key="normal" image="photoalbum"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爆料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-Yr-gcY">
+                                                            <rect key="frame" x="48" y="96.5" width="29" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="gnO-Yr-gcY" firstAttribute="centerX" secondItem="7so-Hw-o3b" secondAttribute="centerX" id="NN3-WU-2gs"/>
+                                                        <constraint firstItem="gnO-Yr-gcY" firstAttribute="top" secondItem="7so-Hw-o3b" secondAttribute="bottom" constant="5" id="fNs-Va-MCe"/>
+                                                        <constraint firstItem="7so-Hw-o3b" firstAttribute="centerY" secondItem="27Q-OC-HhK" secondAttribute="centerY" id="i4e-kf-tkB"/>
+                                                        <constraint firstItem="7so-Hw-o3b" firstAttribute="centerX" secondItem="27Q-OC-HhK" secondAttribute="centerX" id="oWP-cH-DUu"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bfz-i8-5kc" firstAttribute="leading" secondItem="62g-Jr-PKY" secondAttribute="trailing" id="0aN-uS-E7I"/>
+                                                <constraint firstAttribute="trailing" secondItem="27Q-OC-HhK" secondAttribute="trailing" id="4PP-4A-Abf"/>
+                                                <constraint firstItem="62g-Jr-PKY" firstAttribute="centerY" secondItem="0lc-jx-8vW" secondAttribute="centerY" id="585-mE-ODq"/>
+                                                <constraint firstItem="bfz-i8-5kc" firstAttribute="top" secondItem="0lc-jx-8vW" secondAttribute="top" id="Bvr-cH-aSo"/>
+                                                <constraint firstItem="62g-Jr-PKY" firstAttribute="leading" secondItem="0lc-jx-8vW" secondAttribute="leading" id="FkL-8J-nQY"/>
+                                                <constraint firstItem="27Q-OC-HhK" firstAttribute="width" secondItem="62g-Jr-PKY" secondAttribute="width" id="Ks0-O0-gHF"/>
+                                                <constraint firstItem="bfz-i8-5kc" firstAttribute="leading" secondItem="62g-Jr-PKY" secondAttribute="trailing" id="NPR-mV-Yz9"/>
+                                                <constraint firstItem="27Q-OC-HhK" firstAttribute="leading" secondItem="bfz-i8-5kc" secondAttribute="trailing" id="OGF-d9-LbY"/>
+                                                <constraint firstItem="bfz-i8-5kc" firstAttribute="height" secondItem="62g-Jr-PKY" secondAttribute="height" id="Qmm-gc-cX7"/>
+                                                <constraint firstAttribute="bottom" secondItem="bfz-i8-5kc" secondAttribute="bottom" id="Yir-Ve-yyG"/>
+                                                <constraint firstItem="27Q-OC-HhK" firstAttribute="height" secondItem="62g-Jr-PKY" secondAttribute="height" id="aVX-rs-EnL"/>
+                                                <constraint firstItem="27Q-OC-HhK" firstAttribute="centerY" secondItem="0lc-jx-8vW" secondAttribute="centerY" id="jL7-9D-UB0"/>
+                                                <constraint firstItem="bfz-i8-5kc" firstAttribute="centerY" secondItem="0lc-jx-8vW" secondAttribute="centerY" id="nqH-ml-KAu"/>
+                                                <constraint firstItem="bfz-i8-5kc" firstAttribute="width" secondItem="62g-Jr-PKY" secondAttribute="width" id="vQP-yo-e1d"/>
+                                                <constraint firstItem="27Q-OC-HhK" firstAttribute="leading" secondItem="bfz-i8-5kc" secondAttribute="trailing" id="zrw-4z-mcw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="1500" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="qdm-wg-maU" id="BmP-4d-Q3d"/>
@@ -300,12 +467,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pmb-Hs-9OC" firstAttribute="bottom" secondItem="0wQ-MS-Gpx" secondAttribute="bottom" id="2g5-9Y-iO2"/>
-                            <constraint firstItem="0wQ-MS-Gpx" firstAttribute="leading" secondItem="Pmb-Hs-9OC" secondAttribute="leading" id="4Nn-c3-XIB"/>
-                            <constraint firstItem="Pmb-Hs-9OC" firstAttribute="trailing" secondItem="0wQ-MS-Gpx" secondAttribute="trailing" id="6Tw-1F-Jcp"/>
-                            <constraint firstItem="0wQ-MS-Gpx" firstAttribute="top" secondItem="Pmb-Hs-9OC" secondAttribute="top" id="dui-FK-6cE"/>
+                            <constraint firstItem="GyN-Zr-Mtj" firstAttribute="top" secondItem="0wQ-MS-Gpx" secondAttribute="bottom" id="2g5-9Y-iO2"/>
+                            <constraint firstItem="0wQ-MS-Gpx" firstAttribute="leading" secondItem="XH2-uL-7Q2" secondAttribute="leading" id="4Nn-c3-XIB"/>
+                            <constraint firstAttribute="trailing" secondItem="0wQ-MS-Gpx" secondAttribute="trailing" id="6Tw-1F-Jcp"/>
+                            <constraint firstItem="0wQ-MS-Gpx" firstAttribute="top" secondItem="Q2S-oO-Pxd" secondAttribute="bottom" id="dui-FK-6cE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Pmb-Hs-9OC"/>
                     </view>
                     <navigationItem key="navigationItem" title="阿拉尔电视台" id="qDu-8K-S2v">
                         <barButtonItem key="rightBarButtonItem" title="Me" id="t1N-7D-zmZ">

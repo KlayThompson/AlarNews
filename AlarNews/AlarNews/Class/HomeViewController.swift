@@ -11,6 +11,7 @@ import UIKit
 let cellId1 = "HomeItemCell1"
 let cellId2 = "HomeItemCell2"
 let cellId3 = "HomeItemCell3"
+let cellId4 = "HomeItemCell4"
 
 class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
@@ -28,7 +29,7 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,6 +47,11 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             return cell
         } else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellId3, for: indexPath) as! HomeItemCell
+            
+            
+            return cell
+        } else if indexPath.row == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellId4, for: indexPath) as! HomeItemCell
             
             
             return cell
