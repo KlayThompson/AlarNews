@@ -1,0 +1,6 @@
+framework module Pods_AlarNews {
+  umbrella header "Pods-AlarNews-umbrella.h"
+
+  export *
+  module * { export * }
+}

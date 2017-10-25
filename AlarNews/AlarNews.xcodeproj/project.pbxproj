@@ -12,6 +12,10 @@
 		3BF87DC51FA06E0A00948D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87DC31FA06E0A00948D92 /* Main.storyboard */; };
 		3BF87DC71FA06E0A00948D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87DC61FA06E0A00948D92 /* Assets.xcassets */; };
 		3BF87DCA1FA06E0A00948D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87DC81FA06E0A00948D92 /* LaunchScreen.storyboard */; };
+		3BF87DD51FA06F8E00948D92 /* APPInfoDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF87DD41FA06F8E00948D92 /* APPInfoDefine.swift */; };
+		3BF87DD71FA06F9A00948D92 /* MainClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF87DD61FA06F9A00948D92 /* MainClass.swift */; };
+		3BF87DD91FA06FA500948D92 /* MainTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF87DD81FA06FA500948D92 /* MainTools.swift */; };
+		D1A17044FF412AE96EB4FBCE /* Pods_AlarNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8172CA4C713F20D819B5FFD4 /* Pods_AlarNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		3BF87DC61FA06E0A00948D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF87DC91FA06E0A00948D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF87DCB1FA06E0A00948D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF87DD41FA06F8E00948D92 /* APPInfoDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPInfoDefine.swift; sourceTree = "<group>"; };
+		3BF87DD61FA06F9A00948D92 /* MainClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClass.swift; sourceTree = "<group>"; };
+		3BF87DD81FA06FA500948D92 /* MainTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTools.swift; sourceTree = "<group>"; };
+		8172CA4C713F20D819B5FFD4 /* Pods_AlarNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BEE478FBCCCD78AF138797 /* Pods-AlarNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlarNews/Pods-AlarNews.debug.xcconfig"; sourceTree = "<group>"; };
+		AC8BA970999C1544AB24058E /* Pods-AlarNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlarNews/Pods-AlarNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A17044FF412AE96EB4FBCE /* Pods_AlarNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				3BF87DBE1FA06E0A00948D92 /* AlarNews */,
 				3BF87DBD1FA06E0A00948D92 /* Products */,
+				9ABE9A7BE6009DF40381DF06 /* Pods */,
+				430DEB31FD0E0FC5FF0B4CDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,56 @@
 			children = (
 				3BF87DBF1FA06E0A00948D92 /* AppDelegate.swift */,
 				3BF87DC11FA06E0A00948D92 /* ViewController.swift */,
+				3BF87DD31FA06F7B00948D92 /* Define */,
+				3BF87DD21FA06F7300948D92 /* Class */,
+				3BF87DD11FA06F6C00948D92 /* Tools */,
 				3BF87DC31FA06E0A00948D92 /* Main.storyboard */,
 				3BF87DC61FA06E0A00948D92 /* Assets.xcassets */,
 				3BF87DC81FA06E0A00948D92 /* LaunchScreen.storyboard */,
 				3BF87DCB1FA06E0A00948D92 /* Info.plist */,
 			);
 			path = AlarNews;
+			sourceTree = "<group>";
+		};
+		3BF87DD11FA06F6C00948D92 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3BF87DD81FA06FA500948D92 /* MainTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3BF87DD21FA06F7300948D92 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3BF87DD61FA06F9A00948D92 /* MainClass.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		3BF87DD31FA06F7B00948D92 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				3BF87DD41FA06F8E00948D92 /* APPInfoDefine.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		430DEB31FD0E0FC5FF0B4CDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8172CA4C713F20D819B5FFD4 /* Pods_AlarNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ABE9A7BE6009DF40381DF06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0BEE478FBCCCD78AF138797 /* Pods-AlarNews.debug.xcconfig */,
+				AC8BA970999C1544AB24058E /* Pods-AlarNews.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF87DCE1FA06E0A00948D92 /* Build configuration list for PBXNativeTarget "AlarNews" */;
 			buildPhases = (
+				923746CD0C466191AF78FDC5 /* [CP] Check Pods Manifest.lock */,
 				3BF87DB81FA06E0A00948D92 /* Sources */,
 				3BF87DB91FA06E0A00948D92 /* Frameworks */,
 				3BF87DBA1FA06E0A00948D92 /* Resources */,
+				A840141CF80057E24A041584 /* [CP] Embed Pods Frameworks */,
+				F38C6F3D07501D93F7BE5BBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +191,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		923746CD0C466191AF78FDC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A840141CF80057E24A041584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlarNews/Pods-AlarNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F38C6F3D07501D93F7BE5BBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlarNews/Pods-AlarNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BF87DB81FA06E0A00948D92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF87DD51FA06F8E00948D92 /* APPInfoDefine.swift in Sources */,
+				3BF87DD71FA06F9A00948D92 /* MainClass.swift in Sources */,
 				3BF87DC21FA06E0A00948D92 /* ViewController.swift in Sources */,
+				3BF87DD91FA06FA500948D92 /* MainTools.swift in Sources */,
 				3BF87DC01FA06E0A00948D92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +383,7 @@
 		};
 		3BF87DCF1FA06E0A00948D92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0BEE478FBCCCD78AF138797 /* Pods-AlarNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +399,7 @@
 		};
 		3BF87DD01FA06E0A00948D92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC8BA970999C1544AB24058E /* Pods-AlarNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
