@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BF87D991FA0641600948D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF87D981FA0641600948D92 /* AppDelegate.swift */; };
+		3BF87D9B1FA0641600948D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF87D9A1FA0641600948D92 /* ViewController.swift */; };
+		3BF87D9E1FA0641600948D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87D9C1FA0641600948D92 /* Main.storyboard */; };
+		3BF87DA01FA0641600948D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87D9F1FA0641600948D92 /* Assets.xcassets */; };
+		3BF87DA31FA0641600948D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF87DA11FA0641600948D92 /* LaunchScreen.storyboard */; };
+		5EA81BEAD7B9B5C99D5AC7D3 /* Pods_ArlaNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92A204B082FEFA40BB2BBB /* Pods_ArlaNews.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B92A204B082FEFA40BB2BBB /* Pods_ArlaNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArlaNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF87D951FA0641600948D92 /* ArlaNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArlaNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF87D981FA0641600948D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BF87D9A1FA0641600948D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BF87D9D1FA0641600948D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BF87D9F1FA0641600948D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BF87DA21FA0641600948D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BF87DA41FA0641600948D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE438108C2306B2C46C8FCD /* Pods-ArlaNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArlaNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews.release.xcconfig"; sourceTree = "<group>"; };
+		41870456C794C2A0AD89F25F /* Pods-ArlaNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArlaNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BF87D921FA0641600948D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA81BEAD7B9B5C99D5AC7D3 /* Pods_ArlaNews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BF87D8C1FA0641600948D92 = {
+			isa = PBXGroup;
+			children = (
+				3BF87D971FA0641600948D92 /* ArlaNews */,
+				3BF87D961FA0641600948D92 /* Products */,
+				E75757546FA0B54CB9BA818E /* Pods */,
+				EFE62B97E92510D43B1B113A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BF87D961FA0641600948D92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BF87D951FA0641600948D92 /* ArlaNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BF87D971FA0641600948D92 /* ArlaNews */ = {
+			isa = PBXGroup;
+			children = (
+				3BF87D981FA0641600948D92 /* AppDelegate.swift */,
+				3BF87D9A1FA0641600948D92 /* ViewController.swift */,
+				3BF87D9C1FA0641600948D92 /* Main.storyboard */,
+				3BF87D9F1FA0641600948D92 /* Assets.xcassets */,
+				3BF87DA11FA0641600948D92 /* LaunchScreen.storyboard */,
+				3BF87DA41FA0641600948D92 /* Info.plist */,
+			);
+			path = ArlaNews;
+			sourceTree = "<group>";
+		};
+		E75757546FA0B54CB9BA818E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41870456C794C2A0AD89F25F /* Pods-ArlaNews.debug.xcconfig */,
+				3EE438108C2306B2C46C8FCD /* Pods-ArlaNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFE62B97E92510D43B1B113A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B92A204B082FEFA40BB2BBB /* Pods_ArlaNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BF87D941FA0641600948D92 /* ArlaNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF87DA71FA0641600948D92 /* Build configuration list for PBXNativeTarget "ArlaNews" */;
+			buildPhases = (
+				69C800E62259104499BE279D /* [CP] Check Pods Manifest.lock */,
+				3BF87D911FA0641600948D92 /* Sources */,
+				3BF87D921FA0641600948D92 /* Frameworks */,
+				3BF87D931FA0641600948D92 /* Resources */,
+				4BC0A978D36D7AE4CF4CEFB8 /* [CP] Embed Pods Frameworks */,
+				B6DFFCDABBBEB971AC0E9E2A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArlaNews;
+			productName = ArlaNews;
+			productReference = 3BF87D951FA0641600948D92 /* ArlaNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BF87D8D1FA0641600948D92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Brain;
+				TargetAttributes = {
+					3BF87D941FA0641600948D92 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3BF87D901FA0641600948D92 /* Build configuration list for PBXProject "ArlaNews" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BF87D8C1FA0641600948D92;
+			productRefGroup = 3BF87D961FA0641600948D92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BF87D941FA0641600948D92 /* ArlaNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BF87D931FA0641600948D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF87DA31FA0641600948D92 /* LaunchScreen.storyboard in Resources */,
+				3BF87DA01FA0641600948D92 /* Assets.xcassets in Resources */,
+				3BF87D9E1FA0641600948D92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BC0A978D36D7AE4CF4CEFB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C800E62259104499BE279D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DFFCDABBBEB971AC0E9E2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArlaNews/Pods-ArlaNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BF87D911FA0641600948D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF87D9B1FA0641600948D92 /* ViewController.swift in Sources */,
+				3BF87D991FA0641600948D92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BF87D9C1FA0641600948D92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF87D9D1FA0641600948D92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BF87DA11FA0641600948D92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF87DA21FA0641600948D92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BF87DA51FA0641600948D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BF87DA61FA0641600948D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BF87DA81FA0641600948D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41870456C794C2A0AD89F25F /* Pods-ArlaNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BB36MF7NL;
+				INFOPLIST_FILE = ArlaNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klayThompson.ArlaNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BF87DA91FA0641600948D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE438108C2306B2C46C8FCD /* Pods-ArlaNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BB36MF7NL;
+				INFOPLIST_FILE = ArlaNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klayThompson.ArlaNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BF87D901FA0641600948D92 /* Build configuration list for PBXProject "ArlaNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF87DA51FA0641600948D92 /* Debug */,
+				3BF87DA61FA0641600948D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF87DA71FA0641600948D92 /* Build configuration list for PBXNativeTarget "ArlaNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF87DA81FA0641600948D92 /* Debug */,
+				3BF87DA91FA0641600948D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BF87D8D1FA0641600948D92 /* Project object */;
+}
