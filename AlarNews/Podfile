@@ -8,6 +8,7 @@ pod "AFNetworking"
 pod "SDWebImage"
 pod "YYModel"
 pod "SVProgressHUD"
-  # Pods for AlarNews
+pod 'SnapKit', '~> 4.0.0'
+# Pods for AlarNews
 
 end

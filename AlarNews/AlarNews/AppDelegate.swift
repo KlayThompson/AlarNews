@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        showLaunchImage()
         UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
@@ -44,5 +45,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+// MARK: - 启动图片
+extension AppDelegate {
+    
+    func showLaunchImage() {
+        
+        
+        var imageName = ""
+        guard let imagesDic = Bundle.main.infoDictionary,
+            let images = imagesDic["UILaunchImages"] else { return }
+        
+        for dic in images as! NSArray {
+            let dic = dic as! NSDictionary
+            guard let string = dic["UILaunchImageSize"] else {continue}
+            
+            let imageSize = CGSizeFromString(string as! String)
+            if __CGSizeEqualToSize(imageSize, window?.bounds.size ?? CGSize()) {
+                imageName = dic["UILaunchImageName"] as! String
+            }
+        }
+        let image = UIImage(named: imageName)
+        
+        let imageView = UIImageView(frame: window?.bounds ?? CGRect())
+        imageView.image = image
+        imageView.isUserInteractionEnabled = true
+        imageView.tag = 101
+        window?.rootViewController?.view.addSubview(imageView)
+        print("")
+        
+        //添加个进入首页按钮
+        let button = UIButton(type: .custom)
+        
+        button.setTitle("进入首页", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.layer.cornerRadius = 5
+        button.layer.masksToBounds = true
+        button.layer.borderWidth = 0.5
+        button.layer.borderColor = UIColor.black.cgColor
+        button.addTarget(self, action: #selector(showHomePage), for: .touchUpInside)
+        imageView.addSubview(button)
+        button.snp.makeConstraints { (make) in
+            make.centerX.centerY.equalTo(imageView)
+        }
+    }
+    
+    @objc func showHomePage() {
+        let imageView = window?.rootViewController?.view.viewWithTag(101)
+        imageView?.removeFromSuperview()
+    }
 }
 
